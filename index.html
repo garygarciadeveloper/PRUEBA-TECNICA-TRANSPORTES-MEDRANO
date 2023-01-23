@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Diseño y Desarrollo Web</title>
+</head>
+<body>
+    <!-- INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1> DDW> </h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobre mi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!-- ICONOS DE MENU -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ICONOS REDES -->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy<span> Gary García</span>, Diseñador y Desarrollador Web</h2>
+                <a href="#portafolio">Ir a portafolio</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./images/gary.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, <span>Conóceme!</span></h2>
+            
+            <p>Soy apasionado por la tecnologia, arte, deporte y trabajo. Me considero emprendedor, innovador, autodidacta, proactivo, tolerante, alegre y con actitud positiva para enfrentar nuevos retos.</p>
+
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    
+    <!-- SECCION MIS SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Mis Servicios</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graficos</li>
+                    <li>Impresos</li>
+                </ul>
+                <P>Creación de archivos digitales para web e impresos publicitarios.</P>
+            </div>
+        </div>
+   
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="info">
+            <p><span class="lista"></span>HTML & CSS</p>
+            <span class="porcentaje">50%</span>
+        </div>
+        <div class="barra">
+            <div id="html" class=""></div>
+        </div>
+    </div>
+
+    <div class="contenedor-skills" id="skills">
+       
+        <div class="info">
+            <p><span class="lista"></span>Javascript</p>
+            <span class="porcentaje">50%</span>
+        </div>
+        <div class="barra">
+            <div id="js" class=""></div>
+        </div>
+    </div>
+    <div class="contenedor-skills" id="skills">
+      
+        <div class="info">
+            <p><span class="lista"></span>Base de datos</p>
+            <span class="porcentaje">50%</span>
+        </div>
+        <div class="barra">
+            <div id="bd" class=""></div>
+        </div>
+    </div>
+    <div class="contenedor-skills" id="skills">
+      
+        <div class="info">
+            <p><span class="lista"></span>Photoshop</p>
+            <span class="porcentaje">80%</span>
+        </div>
+        <div class="barra">
+            <div id="ps" class=""></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO-->
+    <seccion id="portfolio">
+
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/bd.png" alt="">
+                <div class="info">
+                    <h4>Representación gráfica de datos para inteligencia de negocios.</h4>
+                    <p>Power BI</p>
+                </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/programacion.png" alt="">
+                <div class="info">
+                    <h4>Arte creado con AI para la representacion del manejo de lenguajes de programación</h4>
+                    <p>Diseño Web</p>
+                </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/landing.png" alt="">
+                <div class="info">
+                    <h4>Creación de archivo para uso en wordpress</h4>
+                    <p>Diseño Web</p>
+                </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/ps3.jpg" alt="">
+                <div class="info">
+                    <h4>Archivo creado con suite Adobe</h4>
+                    <p>Diseño Web</p>
+                </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/ps2.jpg" alt="">
+                <div class="info">
+                    <h4>Archivo creado con suite Adobe</h4>
+                    <p>Redes sociales</p>
+                </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/ps.jpg" alt="">
+                <div class="info">
+                    <h4>Archivo creado con suite Adobe</h4>
+                    <p>Redes sociales</p>
+                </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/proyecto.jpg" alt="">
+                <div class="info">
+                    <h4>Archivo creado con suite Adobe</h4>
+                    <p>Redes sociales</p>
+                </div>
+
+            </div>
+    </seccion>
+
+    <!-- SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">¡Contactame Ahora!</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
